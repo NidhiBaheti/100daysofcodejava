@@ -1,0 +1,29 @@
+
+import java.util.*;
+public class assn1 extends employeedeets {
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+employeedeets e = new employeedeets();
+System.out.println("Enter your salary");
+Scanner sc = new Scanner(System.in);
+e.salary=sc.nextInt();
+System.out.println("My id is: "+e.getid());
+e.profession();
+e.display();
+}
+}
+class employeedeets{
+private String id="abc100";
+public int salary;
+protected void profession()
+{
+System.out.println("I work for Boogle");
+}
+public String getid()
+{
+return this.id;
+}
+public void display() {
+System.out.println("My Salary is " + salary + " $");
+}
+}
